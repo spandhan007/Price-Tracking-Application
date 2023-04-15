@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color:black;
+            background-color:lightgreen;
+            padding:15px;
+            margin: 0%;
+        }
+        /* Center the form on the page */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: bisque;
+        }
+
+        label{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+        }
+
+        /* Style the input fields */
+        input[type=text], input[type=email] {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 0 5px gray;
+        }
+
+        /* Style the submit button */
+        input[type=submit] {
+            padding: 10px;
+            background-color: #3de242;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 15px;
+            width: 100px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover{
+            padding: 10px;
+            background-color:rgb(17, 172, 17);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 15px;
+            width: 100px;
+            cursor: pointer;
+        }
+
+
+        /* Add some spacing between elements */
+        label {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Price Tracker</h1>
+    <form method="POST">
+        <label for="name">Link of the product:</label>
+        <input type="text" id="link" name="link"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
